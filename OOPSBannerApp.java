@@ -18,7 +18,7 @@
 
 import java.util.*;
 
-class UC4_OOPSBannerApp{
+class OOPSBannerApp{
 	// Main method to run the banner display
     public static void main(String args[]){
 		String row[]=new String[7];
