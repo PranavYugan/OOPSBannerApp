@@ -18,7 +18,7 @@
 
 
 
-class UC3_OOPSBannerApp{
+class OOPSBannerApp{
     // Main method to run the banner display
     // Use System.out.println() to print each line of the OOPS banner to create 
     // the visual effect for the message "OOPS". Construct each line using
