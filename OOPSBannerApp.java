@@ -1,37 +1,37 @@
 /**
-* OOPSBannerApp UC2 - OOPS Banner Display Application (Use Case 3)
+* OOPSBannerApp UC4 - Render OOPS as Banner using String Array and loop
 *
-* This class extends the functionality of the Use Case 2 by improving the way "OOPS" banner
-* is constructed and displayed. It focuses on enhancing code readability and efficiency
-* by utilizing the String.join() method to create each line of the banner. This approach
-* overcomes the drawbacks of using the + operator for String concatanation, which can lead
-* to code inefficiency due to creation of multiple intermediate String objects in memory.
+* This use case improves upon UC3 by using a String array to store banner lines
+* and interating through them with a for-each loop, eliminating hardcoded print
+* statements and improving modularity and reusability.
 *
 * @author Developer
-* @version 3.0 
+* @version 4.0 
 */
 
-// Extend the use case of UC2 to use String.join() method to create each line of the "OOPS" banner
-// instead of concatenating strings with the + operator. This is essentially to overcome the
-// drawbacks of using the + operator for string concatanation which essentially creates
-// mulitple intermediate String objects in memory leading to inefficiency.
+// Extend the user story 3 to further develop the OOPS Banner Application
+// by using String arrays to hold banner lines and printing them in a loop
+// This use case improves upon UC3 by using a String array to store banner lines
+// and iterating through them with a for-each loop, elimintating hardcoded print
+// statements and improving modularity and reusability.
 
 
+import java.util.*;
 
-class UC3_OOPSBannerApp{
-    // Main method to run the banner display
-    // Use System.out.println() to print each line of the OOPS banner to create 
-    // the visual effect for the message "OOPS". Construct each line using
-    // String.join() method for better readablity and efficiency
-    // Each line corresponds to a row in the banner for the letter O, O, P, S.
-
+class UC4_OOPSBannerApp{
+	// Main method to run the banner display
     public static void main(String args[]){
-        System.out.println(String.join("","   ***    " + "   ***    " + "******** " + "******** "));
-        System.out.println(String.join(""," **   **  " + " **   **  " + "**    ** " + "*        "));
-        System.out.println(String.join("","**     ** " + "**     ** " + "**    ** " + "*        "));
-        System.out.println(String.join("","**     ** " + "**     ** " + "******** " + "******** "));
-        System.out.println(String.join("","**     ** " + "**     ** " + "**       " + "       * "));
-        System.out.println(String.join(""," **   **  " + " **   **  " + "**       " + "       * "));
-        System.out.println(String.join("","   ***    " + "   ***    " + "**       " + "******** "));
+		String row[]=new String[7];
+		row[0]=String.join("","   ***    " + "   ***    " + "******** " + "******** ");
+		row[1]=String.join(""," **   **  " + " **   **  " + "**    ** " + "*        ");
+		row[2]=String.join("","**     ** " + "**     ** " + "**    ** " + "*        ");
+		row[3]=String.join("","**     ** " + "**     ** " + "******** " + "******** ");
+		row[4]=String.join("","**     ** " + "**     ** " + "**       " + "       * ");
+		row[5]=String.join(""," **   **  " + " **   **  " + "**       " + "       * ");
+		row[6]=String.join("","   ***    " + "   ***    " + "**       " + "******** ");
+		for(String i:row){
+			System.out.println(i);
+		}
+		
     }
 }
