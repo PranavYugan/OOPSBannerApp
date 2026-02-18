@@ -20,7 +20,7 @@
 //using the characters formed by spaced and asterisks (*) to create a visual 
 //effect for each letter in the message .use print statements for each line 
 //instead of a loop
-class UC2_OOPSBannerApp{
+class OOPSBannerApp{
     //Main method to run the banner display
     //Print each line of the OOPS banner to create the visual effect for the
     //message "OOPS" . Construct each line using string concatenation.
